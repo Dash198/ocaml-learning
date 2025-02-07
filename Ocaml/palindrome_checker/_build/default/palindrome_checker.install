@@ -1,0 +1,8 @@
+lib: [
+  "_build/install/default/lib/palindrome_checker/META"
+  "_build/install/default/lib/palindrome_checker/dune-package"
+  "_build/install/default/lib/palindrome_checker/opam"
+]
+bin: [
+  "_build/install/default/bin/palindrome_checker"
+]

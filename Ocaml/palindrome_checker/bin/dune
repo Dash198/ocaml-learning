@@ -1,0 +1,4 @@
+(executable
+ (public_name palindrome_checker)
+ (name main)
+ (libraries palindrome_checker))

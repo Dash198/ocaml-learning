@@ -1,0 +1,4 @@
+(lang dune 3.17)
+(name palindrome_checker)
+(sections (lib .) (bin ../../bin))
+(files (lib (META dune-package opam)) (bin (palindrome_checker)))

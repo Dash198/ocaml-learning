@@ -1,0 +1,6 @@
+# dune init proj list_rev
+# OCAMLPARAM: unset
+# Shared cache: enabled-except-user-rules
+# Shared cache location: /home/devansh/.cache/dune/db
+# Workspace root: /home/devansh/Code/Ocaml/list_rev
+# Auto-detected concurrency: 16

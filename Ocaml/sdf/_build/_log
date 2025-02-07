@@ -1,0 +1,10 @@
+### Starting build.
+# Target: hello.ml.depends, tags: { package(base), package(stdio), extension:ml, file:hello.ml, ocaml, ocamldep, quiet }
+ocamlfind ocamldep -package stdio -package base -modules hello.ml > hello.ml.depends
+# Target: hello.cmo, tags: { package(base), package(stdio), byte, compile, extension:cmo, extension:ml, file:hello.cmo, file:hello.ml, implem, ocaml, quiet }
+ocamlfind ocamlc -c -package stdio -package base -o hello.cmo hello.ml
+# Target: hello.cmx, tags: { package(base), package(stdio), compile, extension:cmx, extension:ml, file:hello.cmx, file:hello.ml, implem, native, ocaml, quiet }
+ocamlfind ocamlopt -c -package stdio -package base -o hello.cmx hello.ml
+# Target: hello.native, tags: { package(base), package(stdio), dont_link_with, extension:native, file:hello.native, link, native, ocaml, program, quiet }
+ocamlfind ocamlopt -linkpkg -package stdio -package base hello.cmx -o hello.native
+# Compilation successful.
